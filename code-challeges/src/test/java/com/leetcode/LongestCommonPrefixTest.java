@@ -23,9 +23,9 @@ class LongestCommonPrefixTest {
 
     @Test
     public void testFindFromArray(){
-        //input ["abcde","abcdefgh","abcdeijk"]
-        //Expected "abcde"
-        assertEquals("abcde", longestCommonPrefix.findFromArray(new String[]{"abcde","abcdefgh","abcdeijk"}));
+        //input ["flower","flow","flight"]
+        //Expected "fl"
+        assertEquals("fl", longestCommonPrefix.findFromArray(new String[]{"flower","flow","flight"}));
     }
 
     @Test
