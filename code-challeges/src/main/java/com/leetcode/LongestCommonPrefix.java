@@ -41,45 +41,6 @@ public class LongestCommonPrefix {
         return prefix;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public String findFromArray1(String[] array) {
-
-        if (array.length == 0) {
-            return "";
-        }
-        String prefix = array[0];
-
-        for (int i = 1; i < array.length; i++) {
-            if (!array[i].startsWith(prefix)) {
-                prefix = prefix.substring(0, prefix.length() - 1);
-                i = 0;
-            }
-        }
-        return prefix;
-    }
-
     public String findFromArrayIncremental(String[] array) {
 
         if (array.length == 0) return "";
